@@ -1,0 +1,65 @@
+@import 'setup';
+
+body {
+    min-height: 100vh;
+    background: $background;
+    color: $text;
+    @include flex_center(row);
+
+    section {
+        min-width: 400px;
+        background: #333;
+        padding: 3rem;
+        border-radius: 20px;
+        @include flex_center(column);
+
+        h3 {
+            margin-bottom: 1rem;
+        }
+
+        input {
+            outline: none;
+            color: $secondary;
+            width: 95%;
+            margin: 0 auto 1rem auto;
+            padding: .3rem 0;
+            border: none;
+            background-color: transparent;
+            border-bottom: 4px solid $secondary;
+        }
+
+        button {
+            font-size: 1rem;
+            color: $text;
+            background-color: $secondary;
+            border: none;
+            outline: none;
+            padding: .3rem 2rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .warning {
+            text-align: center;
+            width: 95%;
+            background-color: $warn;
+            padding: .3rem 2rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+
+        h4 {
+            margin-bottom: 1rem;
+        }
+
+        .show {
+            display: block;
+        }
+    }
+
+}
