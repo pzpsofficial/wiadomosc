@@ -10,13 +10,17 @@
 <body>
     <section>
         <h3>Twoja wiadomość</h3>
-        <input type="text" placeholder="Wiadomość...">
-        <button type="submit" id="btn">Prześlij</button>
+        <form action="#" id="form">
+            <input type="text" placeholder="Wiadomość..." id="input">
+            <button type="submit">Prześlij</button>
+        </form>
         <div class="warning">
-            <p>Nie można przesłać pustej wiadomości!</p>
+            <p>Nie można przesłać </br> pustej wiadomości!</p>
         </div>
         <h4>Ostatnia wiadomość</h4>
         <p id="wiadomosc"></p>
     </section>
+
+    <script src="app.js"></script>
 </body>
 </html>
