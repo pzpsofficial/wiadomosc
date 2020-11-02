@@ -87,6 +87,7 @@ body section button {
   padding: .3rem 2rem;
   border-radius: 10px;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 body section button:hover {
