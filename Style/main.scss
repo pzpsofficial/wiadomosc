@@ -17,6 +17,11 @@ body {
             margin-bottom: 1rem;
         }
 
+        form {
+            width: 100%;
+            @include flex_center(column);
+        }
+
         input {
             outline: none;
             color: $secondary;
